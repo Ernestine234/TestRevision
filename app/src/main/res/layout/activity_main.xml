@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meeting Room Booking App"
+        android:textSize="20dp"
+        android:paddingTop="150dp"
+        android:layout_marginStart="70dp"
+        />
+
+    <EditText
+        android:id="@+id/username1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:layout_marginStart="70dp"
+        android:hint="Username"
+        android:paddingTop="50dp"
+        />
+
+    <EditText
+        android:id="@+id/password1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username1"
+        android:layout_marginStart="70dp"
+        android:hint="Password"
+        android:paddingTop="50dp"
+        />
+
+
+    <Spinner
+        android:id="@+id/selectuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password1"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="30dp"
+
+        />
+
+    <TextView
+        android:id="@+id/usertype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select User"
+        android:layout_alignEnd="@+id/selectuser"
+        android:layout_below="@id/password1"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="40dp"/>
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectuser"
+        android:text="SIGN IN"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="30dp"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:gravity="top"
+        android:text="Registration Form"
+        android:textSize="25dp"
+
+        />
+
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="First Name"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/registration"
+        android:paddingTop="150dp"
+        android:layout_marginStart="90dp"/>
+
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Last Name"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/firstname"
+        android:paddingTop="20dp"
+        android:layout_marginStart="90dp"/>
+
+    <EditText
+        android:id="@+id/mobilenumber"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="Mobile Number"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/lastname"
+        android:paddingTop="20dp"
+        android:layout_marginStart="90dp"/>
+
+    <EditText
+        android:id="@+id/department"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Department"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/mobilenumber"
+        android:paddingTop="20dp"
+        android:layout_marginStart="90dp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/department"
+        android:paddingTop="20dp"
+        android:layout_marginStart="90dp"/>
+
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:text="SIGN IN"
+        android:layout_marginStart="150dp"/>
+
+
+
+
+
+
+
+
+</RelativeLayout>
